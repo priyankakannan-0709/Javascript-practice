@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var ElectricCar_1 = require("./ElectricCar");
+var Car_1 = require("./Car");
+var car = new Car_1.default("Toyota", 800000);
+car.getCarInfo();
+car.getDiscountedPrice(10);
+car.getCarInfo();
+var car2 = new Car_1.default("BMW", 2800000);
+car2.getCarInfo();
+car2.getDiscountedPrice(50);
+car2.getCarInfo();
+console.log(Car_1.default.compareCarPrice(car, car2));
+var electricCar = new ElectricCar_1.default("Tata", 2342111, "255W");
+electricCar.getCarInfo();
