@@ -1,0 +1,13 @@
+const ElectricCar=require('./ElectricCar.js')
+const Car=require('./Car.js')
+const car = new Car("Toyota",800000)
+car.getCarInfo()
+car.getDiscountedPrice(10)
+car.getCarInfo()
+const car2 = new Car("BMW",2800000)
+car2.getCarInfo()
+car2.getDiscountedPrice(50)
+car2.getCarInfo()
+console.log(Car.compareCarPrice(car,car2));
+const electricCar = new ElectricCar("Tata",2342111,"255W")
+electricCar.getCarInfo()

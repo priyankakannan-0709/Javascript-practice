@@ -7,9 +7,11 @@ class Person{
     }
     
     get location(){
-        return "Chennai";
+        return "California";
+    }
+    getDetails=function getDetails(){
+        console.log(this.firstName+" "+this.lastName+" "+this.age+" "+this.location)
     }
 }
-let person = new Person("Priyanka","K",25);
-console.log(person.location)
-console.log(person.firstName + " "+person.lastName+" "+person.age)
+let person = new Person("Ann","K",25);
+person.getDetails()
